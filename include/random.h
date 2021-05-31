@@ -40,6 +40,11 @@ inline cRNG *__contextModuleRNG(int k) {
 //@{
 
 /**
+ * Produces a random integer in the range [0,intRandMax()) using generator 0.
+ */
+inline long intrand()  {return __contextModuleRNG(0)->intRand();}
+
+/**
  * Produces a random integer in the range [0,r) using generator 0.
  */
 inline long intrand(long r)  {return __contextModuleRNG(0)->intRand(r);}
