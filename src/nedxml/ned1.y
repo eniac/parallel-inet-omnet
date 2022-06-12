@@ -692,7 +692,7 @@ substparameter
                   ps.substparam = addParameter(ps.substparams,@1);
                   ps.substparam->setIsDefault(true);
                 }
-          inputvalue
+        | inputvalue
                 {
                   storeBannerAndRightComments(ps.substparam,@1,@5);
                   storePos(ps.substparam, @$);
